@@ -15,9 +15,14 @@ namespace BenfordLab
          *   10 ==> returns 1
          *   654321 ==> returns 6
          */
-        public static int getFirstDigit(int digit) {
-            // TODO
-            return 0;
-        }    
+        public static int getFirstDigit(int digit)
+        {
+            int varDigit = digit;
+            while (varDigit >= 10)
+            {
+                varDigit = varDigit / 10;
+            }
+            return varDigit;
+        }
     }
 }
